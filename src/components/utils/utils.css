@@ -1,0 +1,35 @@
+.utils {
+    height: 75vh;
+    font-family: 'Roboto';
+}
+
+.utils h1, h2 {
+    font-weight: 300;
+}
+
+.connect-wallet,
+.get-metamask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.correct-network {
+    margin: 1em 0;
+    padding: 0.5em;
+    text-align: center;
+    border: 2px solid #eb6b40;
+    color: #eb6b40;
+}
+
+.correct-network h2 {
+    margin: 0;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+

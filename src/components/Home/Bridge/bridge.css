@@ -1,0 +1,112 @@
+.bridge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+    Options 
+*/
+.toggle-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    padding: 1em 0;
+}
+
+.toggle-ul input {
+    visibility: hidden;
+    margin: 0;
+    width: 0;
+}
+
+.toggle-ul label {
+    cursor: pointer;
+    padding-bottom: 0.8em;
+    color: gray;
+    margin: 0 0.5em;
+}
+
+.toggle-ul input:checked + label {
+    color: black;
+    border-bottom: 3px solid #eb6b40;
+}
+
+/* 
+    Approve & Transfer sections
+*/
+.bridge-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 2.5em;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.bridge-section-info {
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.bridge-section-info .text-emphasis,
+.form .text-emphasis {
+    color: #eb6b40;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.form .text-emphasis {
+    font-size: 1rem;
+}
+
+.form {
+    width: 35%;
+}
+
+.form p {
+    font-weight: 300;
+}
+
+.form-fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+}
+
+.form-input {
+    font-size: 1rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid #eb6b40;
+}
+
+@media (max-width: 760px) {
+    .bridge-section {
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .form,
+    .bridge-section-info {
+        width: 100%;
+    }
+
+    .bridge-section-info {
+        margin-bottom: 1.5em;
+    }
+}

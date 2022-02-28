@@ -1,0 +1,31 @@
+.home {
+    height: 120vh;
+    background-color: #eee;
+}
+
+.home-primary {
+    background-color: #303030;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.home-primary p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.home-primary .text-emphasis {
+    color: #eb6b40;
+    font-weight: 300;
+}
+
+.home-secondary {
+    
+}
+
+@media (max-width: 760px) {
+    .home {
+        height: 90%;
+    }
+}

@@ -1,0 +1,10 @@
+.header {
+    background-color: #303030;
+    padding: 1.5em 0;
+    color: #fff;
+}
+
+.nav-logo h1 {
+    margin: 0;
+    font-weight: 700;
+}

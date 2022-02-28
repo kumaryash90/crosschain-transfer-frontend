@@ -1,0 +1,23 @@
+.footer {
+    background-color: #303030;
+    padding: 1em;
+    color: #fff;
+    height: 10vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+}
+
+.footer-content a {
+    color: #eb6b40;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-content a:hover {
+    color: #fff;
+}

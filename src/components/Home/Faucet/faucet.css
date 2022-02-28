@@ -1,0 +1,17 @@
+.faucet {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.faucet h2, p {
+    margin: 0;
+}
+
+.faucet .text-small {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1em;
+}
