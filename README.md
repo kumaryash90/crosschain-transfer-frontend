@@ -2,6 +2,11 @@
 
 Live at: https://multichaintoken.netlify.app/
 
+Smart contract code: https://github.com/kumaryash90/crosschain-transfer-solidity
+
+Transfer bridge code: https://github.com/kumaryash90/crosschain-transfer-server
+
+
 Transfer tokens from one network to another.
 
 User will first need to set an allowance, on the Approve tab. (It calls the approve function on the token)
