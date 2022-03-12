@@ -24,7 +24,7 @@ const Home = () => {
                     <h2>Welcome!</h2>
                     <p>You're connected on <span className="text-emphasis">{NETWORKS[chainId]}</span>,</p>
                     <p>with account <span className="text-emphasis">{account}</span>.</p>
-                    {(chainId == 3 || chainId == 4) && 
+                    {(chainId == 3 || chainId == 4 || chainId == 5) && 
                     <p>MCTT contract address on {NETWORKS[chainId]} is <span className="text-emphasis">{getAddress(chainId)}</span></p>}
                     <Faucet />
                 </div>

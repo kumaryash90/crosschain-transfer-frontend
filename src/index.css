@@ -22,10 +22,13 @@ h1, h2, h3, p {
     font-weight: 500;
     font-size: 1rem;
     font-family: 'Roboto';
-    background-color: #eb6b40;
+    /* background-color: #eb6b40; */
     color: #fff;
     text-transform: uppercase;
     transition: 0.3s;
+
+    background: linear-gradient(to right, #f53803, #d97524);
+  
 }
 
 .btn-secondary {

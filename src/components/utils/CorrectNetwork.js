@@ -6,7 +6,7 @@ const CorrectNetwork = () => {
 
     return (
         <div className="correct-network">
-            <h2>This application is available on Ropsten and Rinkeby only</h2>
+            <h2>This application is available only on Ropsten, Rinkeby and Goerli</h2>
         </div>
     );
 }

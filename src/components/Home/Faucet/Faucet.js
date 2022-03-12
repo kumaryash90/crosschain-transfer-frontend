@@ -22,13 +22,13 @@ const Faucet = () => {
     return (
         <div>
             <div className="faucet">
-                <p>If you don't have tokens, get 50 tokens from the <span className="text-emphasis">Rinkeby faucet</span>: </p>
+                <p>If you don't have MCTT tokens, get 50 tokens from this <span className="text-emphasis">faucet on Rinkeby</span>: </p>
                 <p className="text-small">(once per account per day)</p>
                 <button className="btn-primary" disabled={loading || chainId === 1} onClick={handleClick}>Get Tokens</button>
                 <p className="text-small">(Faucet is on Rinkeby only)</p>
                 {loading && <Loading />}
             </div>
-            {chainId !== 3 && chainId !== 4 && <CorrectNetwork />}
+            {chainId !== 3 && chainId !== 4 && chainId !== 5 && <CorrectNetwork />}
         </div>
     );
 }

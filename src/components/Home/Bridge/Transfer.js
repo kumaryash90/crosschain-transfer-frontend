@@ -55,7 +55,7 @@ const Transfer = () => {
                 <p>Tokens to be sent should be less than or equal to the allowance</p>
             </div>
             <form className="form" onSubmit={handleSubmit}>
-                <fieldset className="form-fieldset" disabled={loading || (chainId !== 3 && chainId !== 4)}>
+                <fieldset className="form-fieldset" disabled={loading || (chainId !== 3 && chainId !== 4 && chainId !== 5)}>
                     <p>Sending From: <span className="text-emphasis">{account.substr(0,6)}...{account.substr(38)}</span></p>
                     <br/>
                     <input className="form-input" type="text" placeholder="recipient hex address" value={formData.to} onChange={(e) => setFormData({...formData, to: e.target.value})}/>
@@ -64,8 +64,8 @@ const Transfer = () => {
                         <option value="">Select Recipient Network</option>
                         <option value={3}>Ropsten</option>
                         <option value={4}>Rinkeby</option>
-                        {/* <option value={42}>Kovan</option>
-                        <option value={5}>Goerli</option> */}
+                        {/* <option value={42}>Kovan</option> */}
+                        <option value={5}>Goerli</option>
                     </select>
                     <button className="btn-primary" type="submit">Send</button>
                     <button className="btn-secondary" onClick={clear}>Reset</button>

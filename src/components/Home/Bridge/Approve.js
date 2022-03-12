@@ -66,7 +66,7 @@ const Approve = () => {
                 <p>You can transfer tokens if the allowance is more than the amount to be sent.</p>
             </div>
             <form className="form" onSubmit={handleSubmit}>
-                <fieldset className="form-fieldset" disabled={loading || (chainId !== 3 && chainId !== 4)}>
+                <fieldset className="form-fieldset" disabled={loading || (chainId !== 3 && chainId !== 4 && chainId !== 5)}>
                     <input className="form-input" type="text" placeholder="amount" value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})}/>
                     <button className="btn-primary" type="submit">Send</button>
                     {loading && <Loading />}
